@@ -1,7 +1,19 @@
-import Image from "next/image";
+// Components imports
 
-export default function Home() {
+import About from "@/components/About";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Topbar from "@/components/Topbar";
+
+const Home = () => {
   return (
-   <div>Home Page</div>
+    <div>
+      <Topbar />
+      <Header />
+      <Hero />
+      <About />
+    </div>
   );
-}
+};
+
+export default Home;

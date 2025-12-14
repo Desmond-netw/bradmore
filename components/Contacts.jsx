@@ -1,5 +1,9 @@
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <div id="contact" className="h-screen bg-purple-200">
+      Contacts
+    </div>
+  );
 };
 
 export default Contacts;

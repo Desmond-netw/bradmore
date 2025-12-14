@@ -1,4 +1,8 @@
 export const About = () => {
-  return <div>About</div>;
+  return (
+    <div id="about" className="h-screen bg-red-200">
+      About
+    </div>
+  );
 };
 export default About;

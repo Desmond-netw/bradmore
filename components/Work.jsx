@@ -1,7 +1,11 @@
 import React from "react";
 
 const Work = () => {
-  return <div>Work</div>;
+  return (
+    <div id="projects" className="h-screen bg-yellow-200">
+      Work
+    </div>
+  );
 };
 
 export default Work;

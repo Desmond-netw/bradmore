@@ -8,6 +8,7 @@
    /*  Fontfamily */
   --font-primay : var(--font-dmSans);
   --font-secondary: var(--font-barlow);
+  
   /* Container */
   --container-center: true;
   --container-padding: 15px;
@@ -32,6 +33,6 @@
 /* layer base */
 @layer base {
   body {
-    @apply text-secondary font-secondary
+    @apply text-secondary font-secondary  
   }
 }

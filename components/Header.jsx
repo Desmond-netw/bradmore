@@ -27,20 +27,22 @@ const links = [
 ];
 export const Header = () => {
   return (
-    <header className="bg-primary py-4 sticky top-0">
+    <header className="bg-primary py-4 sticky top-0 z-50">
       <div className="container mx-auto ">
         <ul className="flex gap-12 text-white capitalize">
           {links.map((link, indx) => {
             return (
-              <ScrollLink
-                to={link.path}
-                smooth
-                spy
-                className="cursor-pointer"
-                activeClass="text-accent"
-              >
-                {link.name}
-              </ScrollLink>
+              <li className="font-semibold px-4 py-2 rounded hover:text-brand-yellow hover:opacity-90">
+                <ScrollLink
+                  to={link.path}
+                  smooth
+                  spy
+                  className="cursor-pointer"
+                  activeClass="text-accent"
+                >
+                  {link.name}
+                </ScrollLink>
+              </li>
             );
           })}
         </ul>

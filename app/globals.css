@@ -5,8 +5,8 @@
     Tailwind Theme 
   ====================== */
 @theme {
-   /*  Fontfamily */
-  --font-primay : var(--font-dmSans);
+  /*  Fontfamily */
+  --font-primay: var(--font-dmSans);
   --font-secondary: var(--font-barlow);
 
   /* Container */
@@ -23,6 +23,10 @@
   --color-secondary: #666666;
   --color-accent: #ffca3b;
   --color-border: #d7d7d7;
+  --color-brand-blue: #0b3c6f;
+  --color-brand-yellow: #f5c542;
+  --color-header-bg: #0f172a;
+  --color-surface: #f8fafc;
   /* Box shadow */
   --shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
 }
@@ -30,14 +34,14 @@
 /* layer base */
 @layer base {
   body {
-    @apply text-secondary font-secondary;  
+    @apply text-secondary font-secondary;
   }
   h1,
   h2,
   h3,
   h4,
   h5 {
-    @apply text-primary font-primay ;
+    @apply text-primary font-primay;
   }
 
   .h1 {

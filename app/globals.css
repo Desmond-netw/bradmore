@@ -1,13 +1,37 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
+/* ===================
+    Tailwind Theme 
+  ====================== */
 @theme {
-  /* This generates utilities like bg-primary, text-accent, etc. */
+   /*  Fontfamily */
+  --font-primay : var(--font-dmSans);
+  --font-secondary: var(--font-barlow);
+  /* Container */
+  --container-center: true;
+  --container-padding: 15px;
+
+  /* Screens */
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 968px;
+  --screen-xl: 1200px;
+
+  /* Colors */
   --color-primary: #121315;
-  --color-secondary: #666666; /* Corrected to 6 digits for consistency, assuming typo */
+  --color-secondary: #666666;
   --color-accent: #ffca3b;
   --color-border: #d7d7d7;
 
-  --box-shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
+ 
+  /* Box shadow */
+  --shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
+}
+
+/* layer base */
+@layer base {
+  body {
+    @apply text-secondary font-secondary
+  }
 }

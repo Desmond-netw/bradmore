@@ -8,7 +8,7 @@
    /*  Fontfamily */
   --font-primay : var(--font-dmSans);
   --font-secondary: var(--font-barlow);
-  
+
   /* Container */
   --container-center: true;
   --container-padding: 15px;
@@ -18,14 +18,11 @@
   --screen-md: 768px;
   --screen-lg: 968px;
   --screen-xl: 1200px;
-
   /* Colors */
   --color-primary: #121315;
   --color-secondary: #666666;
   --color-accent: #ffca3b;
   --color-border: #d7d7d7;
-
- 
   /* Box shadow */
   --shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
 }
@@ -33,6 +30,28 @@
 /* layer base */
 @layer base {
   body {
-    @apply text-secondary font-secondary  
+    @apply text-secondary font-secondary;  
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-primary font-primay ;
+  }
+
+  .h1 {
+    @apply text-[40px] xl:text-[54px] uppercase font-black leading-[1.1];
+  }
+  .h2 {
+    @apply text-[36px] leading-[1.3] xl:text-[46px] xl:leading-[56px] capitalize font-bold;
+  }
+
+  .h3 {
+    @apply font-primay font-bold text-3xl;
+  }
+
+  .h4 {
+    @apply text-2xl font-semibold;
   }
 }

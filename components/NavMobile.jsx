@@ -31,7 +31,7 @@ const NabMobile = () => {
           <SheetDescription className="sr-only">NavigationBar</SheetDescription>
           <ul>
             {links.map((link, indxsd) => {
-              return <ScrollLink>{link.name}</ScrollLink>;
+              return <ScrollLink to={link.path}>{link.name}</ScrollLink>;
             })}
           </ul>
         </div>

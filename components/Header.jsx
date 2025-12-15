@@ -3,6 +3,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 // imports
 import { Link as ScrollLink } from "react-scroll";
 import Logo from "./Logo";
+import NavMobile from "./NavMobile";
 
 //const links
 const links = [
@@ -32,9 +33,10 @@ export const Header = () => {
     <header className="bg-primary py-4 sticky top-0 z-50">
       <div className="container mx-auto ">
         <div className="w-full flex items-center justify-between">
-          {/* logo */}
+          {/* --------logo */}
           <Logo />
-          {/* Navigation */}
+
+          {/* ------Navigation */}
           <nav className="hidden xl:flex items-center gap-12">
             <ul className="flex ">
               {links.map((link, index) => (
@@ -77,7 +79,13 @@ export const Header = () => {
               </div>
             </button>
           </nav>
+
+          {/* ---- Mobile menu */}
+          <div className="xl:hidden mx-4">
+            <NavMobile />
+          </div>
         </div>
+        {/* --- ennd of naviation -- */}
       </div>
     </header>
   );

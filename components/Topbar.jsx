@@ -4,7 +4,7 @@ export const Topbar = () => {
   return (
     <section
       id="home"
-      className="py-2 xl:h-16 bg-gradient-to-t from-[#ffc221] to-[#ffd76e] text-sm flex items-center"
+      className="py-2 xl:h-16 bg-gradient-to-t from-[#f8f1dd] to-[#e2d7ba] text-sm flex items-center"
     >
       <div className="container mx-auto">
         {/* phone, mail and social links */}

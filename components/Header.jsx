@@ -2,6 +2,7 @@
 import { RiArrowRightUpLine } from "react-icons/ri";
 // imports
 import { Link as ScrollLink } from "react-scroll";
+import Logo from "./Logo";
 
 //const links
 const links = [
@@ -32,7 +33,7 @@ export const Header = () => {
       <div className="container mx-auto ">
         <div className="w-full flex items-center justify-between">
           {/* logo */}
-          <div>logo</div>
+          <Logo />
           {/* Navigation */}
           <nav className="hidden xl:flex items-center gap-12">
             <ul className="flex ">

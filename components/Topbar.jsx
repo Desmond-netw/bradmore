@@ -26,7 +26,10 @@ export const Topbar = () => {
             </div>
           </div>
           {/* ---------- social */}
-          <Socials />
+          <Socials
+            containerStyles="flex items-center gap-8 mx-auto xl:mx-0"
+            iconStyles="text-primary"
+          />
         </div>
       </div>
     </section>

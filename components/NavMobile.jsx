@@ -30,8 +30,21 @@ const NabMobile = () => {
           </SheetHeader>
           <SheetDescription className="sr-only">NavigationBar</SheetDescription>
           <ul>
-            {links.map((link, indxsd) => {
-              return <ScrollLink to={link.path}>{link.name}</ScrollLink>;
+            {links.map((link, indx) => {
+              return;
+              <li key={indx}>
+                <ScrollLink
+                  to={link.path}
+                  smooth
+                  spy
+                  duration={500}
+                  activeClass="text-accent"
+                  className="cursor-pointer"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </ScrollLink>
+              </li>;
             })}
           </ul>
         </div>

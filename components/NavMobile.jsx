@@ -10,8 +10,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Logo from "./Logo";
+import Header from "./Header";
 import Socials from "./Socials";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "lucide-react";
 
 const NabMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,18 @@ const NabMobile = () => {
         <RiMenu3Fill />
       </SheetTrigger>
       <SheetContent side="right">
-        <div className="bg-primary border-none text-white">Content</div>
+        <div className="bg-primary border-none text-white">
+          {/* Navbar header */}
+          <SheetHeader>
+            <Logo />
+          </SheetHeader>
+          <SheetDescription className="sr-only">NavigationBar</SheetDescription>
+          <ul>
+            {links.map((link, indxsd) => {
+              return <ScrollLink>{link.name}</ScrollLink>;
+            })}
+          </ul>
+        </div>
       </SheetContent>
     </Sheet>
   );

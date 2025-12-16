@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 // Components imports
 
 import About from "@/components/About";
@@ -12,10 +14,36 @@ import Footer from "@/components/Footer";
 import Contacts from "@/components/Contacts";
 
 const Home = () => {
+  // handle scroll
+  const [HeaderActive, setHeaderActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHeaderActive(window.scrolY > 200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  console.log(HeaderActive);
   return (
     <div>
       <Topbar />
-      <Header />
+      {/* stiatic headers */}
+      <div className="relative z-10">
+        <Header />
+      </div>
+      {/* Animated Header */}
+      <div
+        className={`w-full tansition-transform duration-500 fixed top-0 left-0 z-50 ${
+          HeaderActive ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <Header />
+      </div>
+
       <Hero />
       <About />
       <Stats />

@@ -29,6 +29,8 @@
   --color-surface: #f8fafc;
   /* Box shadow */
   --shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
+  /* Bg */
+  --bg-hero: url("/assets/img/hero/bg.jpg");
 }
 
 /* layer base */

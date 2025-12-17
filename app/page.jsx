@@ -37,7 +37,7 @@ const Home = () => {
       </div>
       {/* Animated Header */}
       <div
-        className={`w-full tansition-transform duration-500 fixed top-0 left-0 z-50 ${
+        className={` w-full tansition-transform duration-500 fixed top-0 left-0 z-50 ${
           HeaderActive ? "translate-y-0" : "-translate-y-full"
         }`}
       >

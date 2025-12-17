@@ -1,8 +1,31 @@
-import Image from "next/image";
-
+"use client";
+import { motion } from "framer-motion";
 export const Hero = () => {
   return (
-    <section className="relative h-[70vh] bg-[image:var(--bg-hero)] bg-no-repeat bg-cover bg-center"></section>
+    <section className="relative h-[70vh] bg-[image:var(--bg-hero)] bg-no-repeat bg-cover bg-center">
+      {/* overlay --- */}
+      <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/50 to-black/70 z-10"></div>
+      {/* Hero wrapper */}
+      <div className=" h-full flex items-center ">
+        {/* -----h */}
+        <div className="z-20">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="h1 max-w-4xl text-white"
+          >
+            <span className="text-accent relative inline-block">
+              Engineering
+              <span className="absolute left-0 -bottom-2 w-full h-1 bg-accent"></span>
+            </span>
+            Excellence.
+            <br />
+            <span className="text-brand-yellow">Reliable Solutions.</span>
+          </motion.h1>
+        </div>
+      </div>
+    </section>
   );
 };
 export default Hero;

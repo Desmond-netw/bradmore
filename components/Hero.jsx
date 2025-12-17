@@ -1,12 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
+import Button from "./Button";
 export const Hero = () => {
   return (
     <section className="relative h-[70vh] bg-[image:var(--bg-hero)] bg-no-repeat bg-cover bg-center">
       {/* overlay --- */}
       <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/50 to-black/70 z-10"></div>
       {/* Hero wrapper */}
-      <div className=" h-full flex items-center ">
+      <div className=" h-full flex items-center py-4 px-8 ">
         {/* -----h */}
         <div className="z-10">
           <motion.h1
@@ -23,6 +24,20 @@ export const Hero = () => {
             <br />
             <span className="text-brand-yellow">Reliable Solutions.</span>
           </motion.h1>
+          {/* subText */}
+          <p className="mt-4 mb-6 max-w-2xl text-base text-white xl:text-lg leading-relaxed font-secondary">
+            We are dedicated to delivering
+            <span className="text-accent font-semibold">
+              {" "}
+              innovative engineering{" "}
+            </span>
+            and construction solutions that drive progress for communities and
+            industries.
+          </p>
+          <div>
+            {/* CTA btn */}
+            <Button text="See Our Work" />
+          </div>
         </div>
       </div>
     </section>

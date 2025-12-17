@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setHeaderActive(window.scrolY > 200);
+      setHeaderActive(window.scrollY > 200);
     };
 
     window.addEventListener("scroll", handleScroll);

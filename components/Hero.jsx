@@ -8,7 +8,7 @@ export const Hero = () => {
       {/* Hero wrapper */}
       <div className=" h-full flex items-center ">
         {/* -----h */}
-        <div className="z-20">
+        <div className="z-10">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

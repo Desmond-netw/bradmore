@@ -30,7 +30,7 @@ const links = [
 ];
 export const Header = () => {
   return (
-    <header className="bg-primary py-4 sticky">
+    <header className="bg-primary py-4 ">
       <div className="container mx-auto ">
         <div className="w-full flex items-center justify-between">
           {/* --------logo */}

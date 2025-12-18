@@ -1,5 +1,5 @@
 import { RiPhoneFill, RiMailFill } from "react-icons/ri";
-import Socials from "./Socials";
+import Socials from "./lib/Socials";
 export const Topbar = () => {
   return (
     <section

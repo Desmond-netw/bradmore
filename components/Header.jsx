@@ -2,8 +2,8 @@
 import { RiArrowRightUpLine } from "react-icons/ri";
 // imports
 import { Link as ScrollLink } from "react-scroll";
-import Logo from "./Logo";
-import NavMobile from "./NavMobile";
+import Logo from "./lib/Logo";
+import NavMobile from "./lib/NavMobile";
 
 //const links
 const links = [

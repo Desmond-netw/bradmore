@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Button from "./Button";
+import Button from "./lib/Button";
 export const Hero = () => {
   return (
     <section className="relative h-[70vh] bg-[image:var(--bg-hero)] bg-no-repeat bg-cover bg-center">

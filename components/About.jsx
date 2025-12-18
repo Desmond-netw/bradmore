@@ -3,7 +3,7 @@ export const About = () => {
     <div id="about" className="pt-16 xl:pt-32 ">
       <div className="container mx-auto">
         <div className="flex flex-col gap-12 xl:gap-0 xl:flex-row xl:items-center">
-          {/* Prerttier */}
+          {/* PreTitile */}
           <div className="flex-1">
             <div> About Us</div>
           </div>

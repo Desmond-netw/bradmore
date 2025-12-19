@@ -15,7 +15,7 @@ const Stats = () => {
     <div ref={ref} className="mt-16 xl:mt-32 bg-primary py-10 w-full">
       <div className="container mx-auto h-full">
         {/* handling counting statis data */}
-        <div className="text-white">
+        <div className="text-white flex flex-col items-center justify-between xl:flex-row gap-12">
           {statsData.map((item, index) => {
             return (
               <div className="w-full" key={index}>
@@ -25,6 +25,7 @@ const Stats = () => {
                   )}
                   <span>{item.endCountText}</span>
                 </div>
+                <div>{item.text}</div>
               </div>
             );
           })}

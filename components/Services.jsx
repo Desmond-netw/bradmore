@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tabs, TabsContent, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import Button from "./lib/Button";
 import {
@@ -8,11 +8,130 @@ import {
   PiWrenchFill,
   PiUserGearFill,
 } from "react-icons/pi";
+import { Description } from "@radix-ui/react-dialog";
+// service data
+const serviceData = [
+  {
+    name: "planning",
+    icons: <PiWrenchFill />,
+    title: "Planning & Expansion of Sewer Networks",
+    description:
+      "We design and expand robust sewer systems tailored to the unique needs of each project, ensuring long-term performance and scalability.",
+    serviceList: [
+      "Sewer Pump Sation Construction",
+      "Sewer Pipe Supply & Installation",
+      "Concrete Work",
+      "Sewer Pumps Installation & Maintenance",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-1.jpg" },
+      { url: "/assets/img/services/thumb-2.jpg" },
+    ],
+  },
+  {
+    name: "Construction",
+    icons: <PiWallFill />,
+    title: "General Construction & Maintenance",
+    description:
+      "Our comprehensive services include infrastructure upgrades, routine maintenance, and emergency repairs, supporting the full lifecycle of your assets.",
+    serviceList: [
+      "Structural Design",
+      "Site Prep",
+      "Concrete Work",
+      "Repairs",
+      "Exterior Finnish",
+      "Painting",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-3.jpg" },
+      { url: "/assets/img/services/thumb-4.jpg" },
+    ],
+  },
+  {
+    name: "consulting",
+    icons: <PiUserGearFill />,
+    title: "Technical & Operational Excellence",
+    description:
+      "Our experienced technical team leads the way in implementing best practices, adhering to statutory requirements, and maintaining the highest industry standards. We conduct technical audits, supervise commissioning, develop safety procedures, and provide hands-on field support to solve complex challenges",
+    serviceList: [
+      "Dispatch field Services",
+      "Restoration",
+      "Supervising & Commisioning",
+      "Safety Compliences",
+      "Standard Compliences",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-5.jpg" },
+      { url: "/assets/img/services/thumb-6.jpg" },
+    ],
+  },
+  {
+    name: "Consultancy",
+    icons: <PiPaintRollerFill />,
+    title: "IT Consultancy and Technical services",
+    description: "At Bradmore Enginering Consultants, we are committed to",
+    serviceList: [
+      "Deliverying projects that meet or exceed international standards",
+      "Ensuring full complience with regulatroy bodies",
+      "Implementing audit recommendations and fostering continuous improvement",
+      "Mentoring and Supervising technical staff for sustanied operationale excellence",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-5.jpg" },
+      { url: "/assets/img/services/thumb-6.jpg" },
+    ],
+  },
+];
 export const Services = () => {
+  const [activeTab, setActiveTab] = useState("planning");
   return (
-    <div id="serivces" className="h-screen bg-green-200">
-      Services
-    </div>
+    <section id="serivces" className="pt-16 xl:pt-32">
+      <div className="container mx-auto">
+        {/* services header */}
+        <div>
+          <h2 className="h2 mb-3"> What We Offer</h2>
+          <p className="mb-1 max-w-[480px] mx-auto">
+            Offering tailored Sewer construction solutions, from planning to
+            completion, with a focus on quality and innovation.
+          </p>
+        </div>
+        {/* service tabs */}
+        <div>
+          <Tabs
+            defaultValue="planning"
+            onValueChange={(value) => setActiveTab(value)}
+          >
+            <TabsList className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-[30px] w-full  h-full rounded-none p-0 bg-transparent xl:w-[345px]">
+              {serviceData.map((item) => {
+                return (
+                  <TabsTrigger
+                    key={item.name}
+                    value={item.name}
+                    className="w-full rounded-none h-[100px] flex items-center p-0 relative shadow-custom outline-none"
+                  >
+                    <div
+                      className={`w-[100px] h-[100px] flex items-center justify-center absolute left-0 ${
+                        activeTab === item.name
+                          ? "bg-primary text-white"
+                          : "bg-accent text-primary"
+                      }`}
+                    >
+                      <div className="text-4xl">{item.icons}</div>
+                    </div>
+                    <div className="uppercase font-primary text-base font-semibold tracking-[0.6px] w-[100px] ml-16">
+                      {item.name}
+                    </div>
+                  </TabsTrigger>
+                );
+              })}
+            </TabsList>
+            <TabsContent value="account">account</TabsContent>
+            <TabsContent value="password">password</TabsContent>
+          </Tabs>
+        </div>
+        {/* end service tabs */}
+      </div>
+    </section>
   );
 };
 

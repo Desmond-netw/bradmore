@@ -28,7 +28,7 @@ const Mandate = () => {
         <div className="xl:w-2/3 text-white">
           <p className="text-lg mb-6 uppercase">We specialize in:</p>
 
-          <ul className="space-y-4 list-disc list-inside text-base xl:text-lg">
+          <ul className="space-y-4 list-disc list-inside text-base text-semibold xl:text-lg">
             <li>
               Planning and expanding municipal and industrial sewer networks
             </li>

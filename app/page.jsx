@@ -12,6 +12,7 @@ import Topbar from "@/components/Topbar";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Contacts from "@/components/Contacts";
+import Mandate from "@/components/Mandate";
 
 const Home = () => {
   // handle scroll
@@ -47,6 +48,7 @@ const Home = () => {
       <Hero />
       <About />
       <Stats />
+      <Mandate />
       <Services />
       <Work />
       <Faq />

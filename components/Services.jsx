@@ -129,11 +129,11 @@ export const Services = () => {
               })}
             </TabsList>
              {/* -- tabs content -- */}
-             <div className="flex-1 bg-white shadow-custom h-[490px] p-[30px]">
+             <div className=" flex flex-1 bg-white shadow-custom h-[490px] p-[30px]">
               {serviceData.map((item) => (
               <TabsContent key={item.name} value ={item.name} className="m-0">
                 {/* conents div */}
-                <div >
+                <div className="flex flex-col md:flex-row gap-[30px]" >
                   {/* image wrapper*/}
                   <div className="flex md:flex-col gap-5 xl:gap-[30px]">
                     {item.thumbs.map((thumb, index)=> (
@@ -141,6 +141,25 @@ export const Services = () => {
                         <Image src={thumb.url} fill alt={`${item.name} thumbnail ${index + 1}`} sizes="(max-width: 768px) 100vw, 50vw"></Image>
                       </div>
                     ))}
+                  </div>
+
+                  {/* -- Text & Button */}
+                  <div>
+                    <div>
+                      <h3 className="h3 mb-6">{item.title}</h3>
+                      <p className="mb-10">{item.description}</p>
+                      {/* --- service list -- */}
+                      <ul className="grid grid-cols-2 gap-3 md:gap-4 mb-5">
+                        {item.serviceList.map((service, index)=>{
+                          return <li key={index} className="flex items-center gap-3 md:gap-4">
+                            <div className="w-1.5 h-1.5 bg-accent rounded-full flex-shrink-0"></div>
+                            <div className="capitalize font-medium text-primary text-sm md:text-base">{service}</div>
+                          </li>
+                        })}
+                      </ul>
+                      {/* btn -- */}
+                      <Button text="Read more"/>
+                    </div>
                   </div>
                 </div>
               </TabsContent>

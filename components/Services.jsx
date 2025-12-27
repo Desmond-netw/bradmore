@@ -9,6 +9,7 @@ import {
   PiMouseLeftClickFill
 } from "react-icons/pi";
 import { Description } from "@radix-ui/react-dialog";
+import Pretitle from "./lib/Pretitle";
 // service data
 const serviceData = [
   {
@@ -88,8 +89,9 @@ export const Services = () => {
     <section id="serivces" className="pt-16 xl:pt-32">
       <div className="container mx-auto">
         {/* services header */}
-        <div>
+        <div className="text-center   mb-20">
           <h2 className="h2 mb-3"> What We Offer</h2>
+          <Pretitle text="Our Service" center/>
           <p className="mb-1 max-w-[480px] mx-auto">
             Offering tailored Sewer construction solutions, from planning to
             completion, with a focus on quality and innovation.
@@ -100,6 +102,7 @@ export const Services = () => {
           <Tabs
             defaultValue="planning"
             onValueChange={(value) => setActiveTab(value)}
+            className="flex flex-col xl:flex-row w-full gap-[30px]"
           >
             <TabsList className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-[30px] w-full  h-full rounded-none p-0 bg-transparent xl:w-[345px]">
               {serviceData.map((item) => {
@@ -125,8 +128,24 @@ export const Services = () => {
                 );
               })}
             </TabsList>
-            <TabsContent value="account">account</TabsContent>
-            <TabsContent value="password">password</TabsContent>
+             {/* -- tabs content -- */}
+             <div className="flex-1 bg-white shadow-custom h-[490px] p-[30px]">
+              {serviceData.map((item) => (
+              <TabsContent key={item.name} value ={item.name} className="m-0">
+                {/* conents div */}
+                <div >
+                  {/* image wrapper*/}
+                  <div className="flex md:flex-col gap-5 xl:gap-[30px]">
+                    {item.thumbs.map((thumb, index)=> (
+                      <div key={index} className="relative w-[140px] xl:w-[200px] h-[140px] xl:h-[200px]">
+                        <Image src={thumb.url} fill alt={`${item.name} thumbnail ${index + 1}`} sizes="(max-width: 768px) 100vw, 50vw"></Image>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </TabsContent>
+             ))}
+             </div>
           </Tabs>
         </div>
         {/* end service tabs */}

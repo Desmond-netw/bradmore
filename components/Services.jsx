@@ -4,16 +4,16 @@ import Image from "next/image";
 import Button from "./lib/Button";
 import {
   PiWallFill,
-  PiPaintRollerFill,
   PiWrenchFill,
   PiUserGearFill,
+  PiMouseLeftClickFill
 } from "react-icons/pi";
 import { Description } from "@radix-ui/react-dialog";
 // service data
 const serviceData = [
   {
     name: "planning",
-    icons: <PiWrenchFill />,
+    icons: <PiWrenchFill style={{width:"40", height:"40"}}/>,
     title: "Planning & Expansion of Sewer Networks",
     description:
       "We design and expand robust sewer systems tailored to the unique needs of each project, ensuring long-term performance and scalability.",
@@ -30,7 +30,7 @@ const serviceData = [
   },
   {
     name: "Construction",
-    icons: <PiWallFill />,
+    icons: <PiWallFill style={{width:"40", height:"40"}} />,
     title: "General Construction & Maintenance",
     description:
       "Our comprehensive services include infrastructure upgrades, routine maintenance, and emergency repairs, supporting the full lifecycle of your assets.",
@@ -49,7 +49,7 @@ const serviceData = [
   },
   {
     name: "consulting",
-    icons: <PiUserGearFill />,
+    icons: <PiUserGearFill style={{width:"40", height:"40"}}/>,
     title: "Technical & Operational Excellence",
     description:
       "Our experienced technical team leads the way in implementing best practices, adhering to statutory requirements, and maintaining the highest industry standards. We conduct technical audits, supervise commissioning, develop safety procedures, and provide hands-on field support to solve complex challenges",
@@ -66,10 +66,10 @@ const serviceData = [
     ],
   },
   {
-    name: "Consultancy",
-    icons: <PiPaintRollerFill />,
+    name: "IT Services",
+    icons: <PiMouseLeftClickFill style={{width:"40", height:"40"}} />,
     title: "IT Consultancy and Technical services",
-    description: "At Bradmore Enginering Consultants, we are committed to",
+    description: "Transforming IT Infrastructure for Modern Enterprises. We deliver IT Consultancy, sales and security solutions tailored for organizations seeking reliability, scalability, and robust protection in today's digital landscape",
     serviceList: [
       "Deliverying projects that meet or exceed international standards",
       "Ensuring full complience with regulatroy bodies",
@@ -116,7 +116,7 @@ export const Services = () => {
                           : "bg-accent text-primary"
                       }`}
                     >
-                      <div className="text-4xl">{item.icons}</div>
+                      <div className="text-5xl">{item.icons}</div>
                     </div>
                     <div className="uppercase font-primary text-base font-semibold tracking-[0.6px] w-[100px] ml-16">
                       {item.name}

@@ -61,3 +61,10 @@
     @apply text-2xl font-semibold;
   }
 }
+
+
+/* --- Service Icons --- */
+.serviceIcons svg {
+ width: 40px !important;
+  height: 40px !important;
+}

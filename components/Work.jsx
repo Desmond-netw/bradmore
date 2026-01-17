@@ -68,7 +68,7 @@ const Work = () => {
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Details */}
-              <div className="absolute bottom-0 left-0 right-0 z-10 p-6 text-white translate-y-10 lg:opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="absolute bottom-0 left-0 right-0 z-10 p-6 text-white translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="  flex items-center gap-2 mb-2">
                   <RiCheckboxCircleFill className="text-accent text-xl" />
                   <h4 className="font-bold uppercase tracking-wide">

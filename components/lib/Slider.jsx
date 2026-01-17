@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
+import SliderBtns from "./SliderBtns";
 
 export const Slider = () => {
   return (
@@ -23,9 +24,9 @@ export const Slider = () => {
           {/* text */}
           <div className="flex-1 xl:max-w-[340px] flex flex-col gap-2">
             <p className="text-sm opacity-80 font-primary">
-              Excellent service and professional delivery.
+              Good construction and expert on filed make the project complete on time.
             </p>
-            <h5 className="font-semibold">John Doe</h5>
+            <h5 className="font-semibold">Desmond Deveh</h5>
           </div>
         </div>
       </SwiperSlide>
@@ -48,7 +49,7 @@ export const Slider = () => {
             <p className="text-sm opacity-80 font-primary">
               Excellent service and professional delivery.
             </p>
-            <h5 className="font-semibold">John Doe</h5>
+            <h5 className="font-semibold">Lary Donkor Nhyira</h5>
           </div>
         </div>
       </SwiperSlide>
@@ -77,7 +78,7 @@ export const Slider = () => {
       </SwiperSlide>
 
     {/* slider btns */}
-     
+     <SliderBtns/>
     </Swiper>
   );
 };

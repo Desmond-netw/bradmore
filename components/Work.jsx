@@ -37,7 +37,7 @@ const workData = [
 
 const Work = () => {
   return (
-    <section id="projects" className="py-16 xl:py-32">
+    <section id="projects" className="py-16 xl:pt-32">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-[540px] mx-auto mb-12 xl:mb-20">

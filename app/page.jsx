@@ -13,6 +13,7 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Contacts from "@/components/Contacts";
 import Mandate from "@/components/Mandate";
+import Testimonials from "@/components/Testimonials";
 
 const Home = () => {
   // handle scroll
@@ -51,7 +52,8 @@ const Home = () => {
       <Mandate />
       <Services />
       <Work />
-      <Faq />
+      <Testimonials/>
+      {/* <Faq /> */}
       <Contacts />
       <Footer />
     </div>

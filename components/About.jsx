@@ -9,7 +9,7 @@ export const About = () => {
         <div className="flex flex-col gap-12 xl:gap-0 xl:flex-row xl:items-center">
           {/* PreTitile */}
           <div className="flex-1">
-            <div className="max-w-135">
+            <div className="max-w-135 sm:px-4 md:px-4">
               <Pretitle text="About us" center={false} />
               <h2 className="h2 mt-4 text-primary">
                 Engineering expertise you can trust
@@ -19,6 +19,9 @@ export const About = () => {
               </p>
               <p className="mt-4 text-secondary leading-relaxed max-w-xl font-secondary">
                We operate at the intersection of engineering precision, construction excellence, and operational sustainability, ensuring that every project we deliver contributes meaningfully to public health, environmental protection, and urban development.
+              </p>
+              <p className="mt-4 text-secondary leading-relaxed max-w-xl font-secondary">
+               Bradmore Engineering Consultants supports municipal authorities, utility providers, developers, and industrial clients with infrastructure solutions designed to withstand operational demands while meeting regulatory and environmental standards.
               </p>
               {/* signature */}
               <div>

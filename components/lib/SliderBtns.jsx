@@ -8,10 +8,10 @@ const SliderBtns = () => {
     const swiper = useSwiper()
   return (
     <div className="w-max absolute bottom-2 right-2 flex gap-1 z-10">
-        <button className="bg-accent text-primary text[22px] w-[48px] h-[48px] flex justify-center xl:text-2xl items-center transition-all cursor-pointer " onClick={() => swiper.slidePrev()}>
+        <button className="bg-accent text-primary text[22px] w-[48px] h-[48px] flex justify-center sm:text-sm xl:text-2xl items-center transition-all cursor-pointer " onClick={() => swiper.slidePrev()}>
             <RiArrowLeftLine/>
         </button>
-        <button className="bg-accent text-primary text[22px] w-[48px] h-[48px] flex justify-center xl:text-2xl items-center transition-all cursor-pointer " onClick={() => swiper.slideNext()}>
+        <button className="bg-accent text-primary text[22px] w-[48px] h-[48px] flex justify-center sm:text-sm  xl:text-2xl items-center transition-all cursor-pointer " onClick={() => swiper.slideNext()}>
             <RiArrowRightLine/>
         </button>
     </div>

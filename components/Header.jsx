@@ -20,6 +20,10 @@ const links = [
     path: "serivces",
   },
   {
+    name: "Vision",
+    path: "vision",
+  },
+  {
     name: "projects",
     path: "projects",
   },

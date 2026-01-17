@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import Contacts from "@/components/Contacts";
 import Mandate from "@/components/Mandate";
 import Testimonials from "@/components/Testimonials";
+import VisionMission from "@/components/VisionMission";
 
 const Home = () => {
   // handle scroll
@@ -50,6 +51,7 @@ const Home = () => {
       <About />
       <Stats />
       <Mandate />
+      <VisionMission/>
       <Services />
       <Work />
       <Testimonials/>

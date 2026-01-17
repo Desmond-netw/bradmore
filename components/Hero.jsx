@@ -29,10 +29,9 @@ export const Hero = () => {
             We are dedicated to delivering
             <span className="text-accent font-semibold">
               {" "}
-              innovative engineering{" "}
+              Reliable,
             </span>
-            and construction solutions that drive progress for communities and
-            industries.
+            Sustainable & Future-Ready Engineering Infrastructure 
           </p>
           <div>
             {/* CTA btn */}

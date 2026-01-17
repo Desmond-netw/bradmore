@@ -93,7 +93,7 @@ export const Services = () => {
           <h2 className="h2 mb-3"> What We Offer</h2>
           <Pretitle text="Our Service" center/>
           <p className="mb-1 max-w-[480px] mx-auto">
-            Offering tailored Sewer construction solutions, from planning to
+            Offering tailored infrastructure construction solutions, from planning to
             completion, with a focus on quality and innovation.
           </p>
         </div>

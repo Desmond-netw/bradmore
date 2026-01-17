@@ -15,19 +15,10 @@ export const About = () => {
                 Engineering expertise you can trust
               </h2>
               <p className="mt-6 text-secondary leading-relaxed max-w-xl font-secondary">
-                Bradmore Engineering Consultants is a multidisciplinary
-                engineering and construction consultancy dedicated to delivering
-                reliable, efficient, and sustainable infrastructure solutions.
-                We work closely with public and private sector clients to plan,
-                design, and execute projects that meet the highest technical and
-                safety standards.
+                Bradmore Engineering Consultants is a professional engineering and construction firm specializing in sanitation infrastructure, sewer network development, pumping systems, and general civil construction services. The company provides end-to-end solutions covering planning, design support, construction, installation, operation, and long-term maintenance of critical infrastructure assets and environmental impact assessment and environmental management services.
               </p>
               <p className="mt-4 text-secondary leading-relaxed max-w-xl font-secondary">
-                With a strong focus on sewer networks, pump stations, and
-                critical infrastructure systems, our experienced team combines
-                technical excellence with practical field knowledge to ensure
-                long-term performance, regulatory compliance, and value for
-                money.
+               We operate at the intersection of engineering precision, construction excellence, and operational sustainability, ensuring that every project we deliver contributes meaningfully to public health, environmental protection, and urban development.
               </p>
               {/* signature */}
               <div>

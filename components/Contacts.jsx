@@ -15,7 +15,7 @@ const Contacts = () => {
             {/* -- form---- */}
             <div className="flex-1">
               <h2 className="h2 mb-3">Request A Qoute</h2>
-              <p>
+              <p className="mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi debitis rem distinctio, eaque nihil quo dolor, consectetur sit odio error quos! Quidem inventore, consectetur alias explicabo id in quam.
               </p>
               {/* form */}

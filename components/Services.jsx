@@ -17,12 +17,14 @@ const serviceData = [
     icons: <PiWrenchFill style={{width:"40", height:"40"}}/>,
     title: "Planning & Expansion of Sewer Networks",
     description:
-      "We design and expand robust sewer systems tailored to the unique needs of each project, ensuring long-term performance and scalability.",
+      "Bradmore Engineering Consultants provides comprehensive sewer network planning and expansion services, supporting both new developments and upgrades to existing systems.",
     serviceList: [
-      "Sewer Pump Sation Construction",
-      "Sewer Pipe Supply & Installation",
-      "Concrete Work",
-      "Sewer Pumps Installation & Maintenance",
+      "Sewer network feasibility studies",
+      "Load and capacity assessments",
+      "Network expansion planning",
+      "Integration with existing sewer infrastructure",
+      "Design coordination and constructability reviews",
+      "Compliance with sanitation and environmental regulations",
     ],
     thumbs: [
       { url: "/assets/img/services/thumb-1.jpg" },
@@ -30,18 +32,18 @@ const serviceData = [
     ],
   },
   {
-    name: "Construction",
+    name: "PUMP STATION",
     icons: <PiWallFill style={{width:"40", height:"40"}} />,
-    title: "General Construction & Maintenance",
+    title: "SEWER PUMP STATION CONSTRUCTION",
     description:
-      "Our comprehensive services include infrastructure upgrades, routine maintenance, and emergency repairs, supporting the full lifecycle of your assets.",
+      "We specialize in the construction of sewage transfer and pumping stations, designed to safely and efficiently transport wastewater across varying elevations and distances.",
     serviceList: [
-      "Structural Design",
-      "Site Prep",
-      "Concrete Work",
-      "Repairs",
-      "Exterior Finnish",
-      "Painting",
+      "Civil works (excavation, foundations, chambers)",
+      "Wet well and dry well construction",
+      "Mechanical pump installation",
+      "Electrical works and control panels",
+      "Safety systems and access structures",
+      "Testing, commissioning, and handover",
     ],
     thumbs: [
       { url: "/assets/img/services/thumb-3.jpg" },
@@ -49,17 +51,17 @@ const serviceData = [
     ],
   },
   {
-    name: "consulting",
+    name: "Pipe Supply",
     icons: <PiUserGearFill style={{width:"40", height:"40"}}/>,
-    title: "Technical & Operational Excellence",
+    title: "SEWER PIPE SUPPLY & INSTALLATION",
     description:
-      "Our experienced technical team leads the way in implementing best practices, adhering to statutory requirements, and maintaining the highest industry standards. We conduct technical audits, supervise commissioning, develop safety procedures, and provide hands-on field support to solve complex challenges",
+      "Bradmore Engineering Consultants supplies and installs high-quality sewer pipes suitable for diverse ground conditions, flow requirements, and operational environments (Materials : uPVC, HDPE, Ductile Iron, Reinforced Concrete)",
     serviceList: [
-      "Dispatch field Services",
-      "Restoration",
-      "Supervising & Commisioning",
-      "Safety Compliences",
-      "Standard Compliences",
+      "•	Trenching and backfilling",
+      "•	Pipe jointing and alignment",
+      "•	Manhole construction",
+      "•	Gravity and pressure sewer systems",
+      "•	Testing and quality assurance",
     ],
     thumbs: [
       { url: "/assets/img/services/thumb-5.jpg" },
@@ -67,19 +69,37 @@ const serviceData = [
     ],
   },
   {
-    name: "IT Services",
+    name: "Maintenance",
     icons: <PiMouseLeftClickFill style={{width:"40", height:"40"}} />,
-    title: "IT Consultancy and Technical services",
-    description: "Transforming IT Infrastructure for Modern Enterprises. We deliver IT Consultancy, sales and security solutions tailored for organizations seeking reliability, scalability, and robust protection in today's digital landscape",
+    title: "SEWER PUMP INSTALLATION & MAINTENANCE",
+    description: "We deliver professional installation, servicing, and maintenance of sewage pumps to ensure continuous system performance. Our Philosopy include 1. Minimize downtime, 2. Extend equipment life and 3. Ensure compliance and safety",
     serviceList: [
-      "Deliverying projects that meet or exceed international standards",
-      "Ensuring full complience with regulatroy bodies",
-      "Implementing audit recommendations and fostering continuous improvement",
-      "Mentoring and Supervising technical staff for sustanied operationale excellence",
+      "Pump selection and sizing support",
+      "Installation and commissioning",
+      "Preventive maintenance programs",
+      "Emergency breakdown response",
+      "Pump refurbishment and replacement",
     ],
     thumbs: [
-      { url: "/assets/img/services/thumb-5.jpg" },
-      { url: "/assets/img/services/thumb-6.jpg" },
+      { url: "/assets/img/services/thumb-7.jpg" },
+      { url: "/assets/img/services/thumb-8.jpg" },
+    ],
+  },
+  {
+    name: "GENERAL CONSTRUCTION",
+    icons: <PiWallFill style={{width:"40", height:"40"}} />,
+    title: "GENERAL CONSTRUCTION & MAINTENANCE",
+    description:
+      "Beyond sanitation infrastructure, Bradmore Engineering Consultants offers general civil construction and maintenance services to support infrastructure sustainability. ",
+    serviceList: [
+      "•	Civil works and structures",
+      "•	Rehabilitation and repairs",
+      "•	Preventive maintenance programs",
+      "•	Utility infrastructure support",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-9.jpg" },
+      { url: "/assets/img/services/thumb-10.jpg" },
     ],
   },
 ];
@@ -93,8 +113,7 @@ export const Services = () => {
           <h2 className="h2 mb-3"> What We Offer</h2>
           <Pretitle text="Our Service" center/>
           <p className="mb-1 max-w-[480px] mx-auto">
-            Offering tailored infrastructure construction solutions, from planning to
-            completion, with a focus on quality and innovation.
+            Offering professional engineering, construction, maintenance, and environmental assessment services through skilled personnel and sound engineers.
           </p>
         </div>
         {/* service tabs */}
